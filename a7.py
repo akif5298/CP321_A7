@@ -124,5 +124,7 @@ def display_final_result(selected_year):
     record = df[df['Year'] == selected_year].iloc[0]
     return html.P(f"In {selected_year}, {record['Winner']} won the final against {record['RunnerUp']}.")
 
-# For running in a Jupyter Notebook, set use_reloader=False to avoid duplicate callbacks
-app.run(mode = 'external',debug=True, use_reloader=False)
+if __name__ == '__main__':
+    # When running locally for development, you can run without the 'mode' parameter:
+    app.run_server(debug=True, use_reloader=False)
+
