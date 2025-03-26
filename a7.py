@@ -1,4 +1,4 @@
-# Published Dashboard: https://your-render-link.render.com (password: examplepassword)
+# Published Dashboard: https://live-fifa-world-cup-map-a7.onrender.com
 
 import numpy as np
 import pandas as pd
